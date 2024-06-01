@@ -97,3 +97,5 @@ export const FloatingNav = forwardRef(
     );
   }
 );
+
+FloatingNav.displayName = 'FloatingNav';
