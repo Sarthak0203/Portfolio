@@ -1,113 +1,97 @@
-import Image from "next/image";
+'use client'
+'use client'
+import Clients from "@/components/Clients";
+import Grid from "@/components/Grid";
+import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
+import Experience from "@/components/Experience";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import Approach from "../components/Approach";
+import Footer from "@/components/Footer";
+import { useRef } from "react";
+import { FaHome } from "react-icons/fa";
+import { RefObject } from "react";
 
 export default function Home() {
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const TestimonialsRef = useRef<HTMLDivElement>(null);
+  const approachRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const connectRef = useRef<HTMLDivElement>(null);
+  
+
+  // Function to scroll to the projects section
+  const scrollToProjects = () => {
+    if (projectsRef.current) {
+      window.scrollTo({
+        top: projectsRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  const scrollToTest = () => {
+    if (TestimonialsRef.current) {
+      window.scrollTo({
+        top: TestimonialsRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  const scrollToApproach = () => {
+    if (approachRef.current) {
+      window.scrollTo({
+        top: approachRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  const scrollToExperience = () => {
+    if (experienceRef.current) {
+      window.scrollTo({
+        top: experienceRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  const scrollToConnect = () => {
+    if (connectRef.current) {
+      window.scrollTo({
+        top: connectRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <div className="max-w-7xl w-full">
+        
+        <FloatingNav navItems={[
+          {name: 'Home', link: "/", icon: <FaHome/> },
+          {name: 'Projects', link:"#projects", onClick: scrollToProjects },
+          // {name: 'Testimonials', link:"#testimonials", onClick: scrollToTest },
+          {name: 'Experience', link:"#experience", onClick: scrollToExperience },
+          {name: 'Approach', link:"#approach", onClick: scrollToApproach },
+          {name: 'Connect', link:"#connect", onClick: scrollToConnect },
+        ]} />
+        <Hero/>
+        <Grid/>
+        <RecentProjects/>
+        {/* <Clients/> */}
+        <Experience/>
+        <Approach/>
+        {/* Add ref to Projects section */}
+        <div ref={projectsRef}>
+          <Footer/>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );
 }
+
+// Function to scroll to a specific reference
+const scrollToRef = (ref: RefObject<HTMLDivElement>) => {
+  if (ref.current) {
+    ref.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the referenced element
+  }
+};
