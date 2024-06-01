@@ -1,5 +1,4 @@
 {
-  "countries": {
     "type": "FeatureCollection",
     "features": [
       {
@@ -36748,4 +36747,3 @@
       }
     ]
   }
-}
