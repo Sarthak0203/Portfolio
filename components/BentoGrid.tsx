@@ -56,12 +56,11 @@ export const BentoGridItem = ({
             setCopied(true);
             setTimeout(() => {
                 setCopied(false);
-            }, 2000); // Reset copied state after 2 seconds
+            }, 2000);
         }).catch((err) => {
             console.error('Failed to copy text: ', err);
         });
     };
-    
 
     return (
         <div
@@ -79,18 +78,18 @@ export const BentoGridItem = ({
                 <div className="w-full h-full absolute">
                     {img && (
                         <img
-                            src={img}
+                            src={`/${img}`} // Ensure this path is correct
                             alt={img}
-                            className={cn(imgClassName, "object-cover object-center ")}
+                            className={cn(imgClassName, "object-cover object-center")}
                         />
                     )}
                 </div>
                 <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
                     {SpareImg && (
                         <img
-                            src={SpareImg}
+                            src={`/${SpareImg}`} // Ensure this path is correct
                             alt={SpareImg}
-                            className={'object-cover, object-center w-full h-full'}
+                            className='object-cover object-center w-full h-full'
                         />
                     )}
                 </div>
@@ -110,7 +109,7 @@ export const BentoGridItem = ({
                     </div>
                     {id === 2 && <GlobeDemo />}
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right2">
+                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
                             <div className="flex flex-col gap-3 lg:gap-8">
                                 {['React.js', 'Next.js', 'Javascript'].map((item) => (
                                     <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132] ">
@@ -131,7 +130,7 @@ export const BentoGridItem = ({
                     )}
                     {id === 6 && (
                         <div className="mt-5 relative">
-                            <div className={`absolute -bottom-5 right-0`}>
+                            <div className="absolute -bottom-5 right-0">
                                 <Lottie options={{
                                     loop: copied,
                                     autoplay: copied,
