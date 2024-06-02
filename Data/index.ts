@@ -101,7 +101,7 @@ export const navItems = [
       id: 4,
       title: "NewsHunter - A news website",
       des: "A news fetching website based on categories...",
-      img: "/news.svg",
+      img: "/news.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/Sarthak0203/newsapp",
       para: "Check Github"
