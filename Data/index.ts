@@ -13,7 +13,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357377/Portfolio/b1_qmzxcv.svg",
       spareImg: "",
     },
     {
@@ -43,8 +43,8 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357378/Portfolio/grid_mmd7r2.svg",
+      spareImg: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357355/Portfolio/b4_hjlmxw.svg",
     },
   
     {
@@ -54,8 +54,8 @@ export const navItems = [
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357356/Portfolio/b5_yfnlcq.svg",
+      spareImg: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357378/Portfolio/grid_mmd7r2.svg",
     },
     {
       id: 6,
@@ -74,8 +74,8 @@ export const navItems = [
       id: 1,
       title: "ChatApp - A full stack chatting and video conferencing website",
       des: "Simplify your chatting video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357378/Portfolio/p2_zgcin7.svg",
+      // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "https://github.com/Sarthak0203/chat",
       para: 'Check Github'
     },
@@ -83,8 +83,8 @@ export const navItems = [
       id: 2,
       title: "InkQuill - A full stack blog writing website",
       des: "A real time blog writing website build on MERN stack",
-      img: "/InkQuill.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357773/Portfolio/InkQuill_p1lyxv.png",
+      // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/Sarthak0203/blog",
       para: 'Check Github'
     },
@@ -92,8 +92,8 @@ export const navItems = [
       id: 3,
       title: "Imagify - An image search engine",
       des: "An image search engine which search images based on user's search query",
-      img: "/imagify.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357364/Portfolio/imagify_godbkr.png",
+      // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
       link: "http://imagify.html-5.me",
       para: 'Check Live Website'
     },
@@ -101,8 +101,8 @@ export const navItems = [
       id: 4,
       title: "NewsHunter - A news website",
       des: "A news fetching website based on categories...",
-      img: "/news.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357378/Portfolio/news_lcuqpt.png",
+      // iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/Sarthak0203/newsapp",
       para: "Check Github"
     },
@@ -141,38 +141,38 @@ export const navItems = [
     },
   ];
   
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+  // export const companies = [
+  //   {
+  //     id: 1,
+  //     name: "cloudinary",
+  //     img: "/cloud.svg",
+  //     nameImg: "/cloudName.svg",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "appwrite",
+  //     img: "/app.svg",
+  //     nameImg: "/appName.svg",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "HOSTINGER",
+  //     img: "/host.svg",
+  //     nameImg: "/hostName.svg",
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "stream",
+  //     img: "/s.svg",
+  //     nameImg: "/streamName.svg",
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "docker.",
+  //     img: "/dock.svg",
+  //     nameImg: "/dockerName.svg",
+  //   },
+  // ];
   
   export const workExperience = [
     // {
@@ -194,14 +194,14 @@ export const navItems = [
       title: "Freelance Web Dev Project",
       desc: "Led the dev of a mobile app for a client, from initial concept to deployment on Vercel.",
       className: "md:col-span-2",
-      thumbnail: "/exp3.svg",
+      thumbnail: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357360/Portfolio/exp3_c8qq9j.svg",
     },
     {
       id: 4,
       title: "Lead Web Developer",
       desc: "Developed and maintained user-facing features using modern frontend and backend technologies.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357360/Portfolio/exp4_hvymti.svg",
     },
   ];
   
@@ -209,7 +209,7 @@ export const navItems = [
     {
       id: 1,
       name: "Github",
-      img: "/git.svg",
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357362/Portfolio/git_lg9ja5.svg",
       link: "https://github.com/Sarthak0203"
     },
     // {
@@ -219,7 +219,7 @@ export const navItems = [
     {
       id: 3,
       name: "LinkedIn",
-      img: "/link.svg",
+      img: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717358158/link_nysqvr.svg",
       link: "https://www.linkedin.com/in/sarthak-chaudhary-84aa90279/",
     },
   ];

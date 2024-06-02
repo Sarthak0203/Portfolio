@@ -9,7 +9,7 @@ const Footer = () => {
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
-          src="/footer-grid.svg"
+          src="https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357362/Portfolio/footer-grid_b8rom3.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
         />

@@ -4,6 +4,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: 'export',
 };
 
 export default withSentryConfig(
@@ -14,7 +15,7 @@ export default withSentryConfig(
 
     // Suppresses source map uploading logs during build
     silent: true,
-    org: "javascript-mastery",
+    org: "student-4bf",
     project: "javascript-nextjs",
   },
   {

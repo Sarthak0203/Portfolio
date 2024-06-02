@@ -187,8 +187,8 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <img src="https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357357/Portfolio/confetti_b1ifb5.gif" alt="confetti" />
+                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
               </div>
 
               <MagicButton

@@ -27,7 +27,7 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src="https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357355/Portfolio/bg_hbvlle.png" alt="bgimg" />
                 </div>
                 <img
                   src={item.img}
