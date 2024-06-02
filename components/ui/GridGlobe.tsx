@@ -406,3 +406,4 @@ export function GlobeDemo() {
     </div>
   );
 }
+export default GlobeDemo;

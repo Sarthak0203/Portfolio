@@ -7,21 +7,16 @@ const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
-    "./components/ui/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
   ],
-  safelist: [
-    {
-      pattern: /./,
-    },
-  ],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -193,7 +188,7 @@ const config: Config = {
       );
     },
   ],
-};
+} satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
