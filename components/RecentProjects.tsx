@@ -2,7 +2,7 @@
 
 import { FaLocationArrow } from "react-icons/fa6";
 
-import { projects } from "../data";
+import { projects } from "../Data";
 import { PinContainer } from "./ui/pin";
 
 const RecentProjects = () => {

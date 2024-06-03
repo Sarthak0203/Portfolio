@@ -1,6 +1,6 @@
 import React from "react";
 
-import { workExperience } from "../data";
+import { workExperience } from "../Data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
