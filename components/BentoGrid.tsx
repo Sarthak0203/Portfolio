@@ -67,9 +67,13 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "sarthakchaudhary0203@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+    
   };
 
   return (
@@ -141,7 +145,7 @@ export const BentoGridItem = ({
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-7 mx-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
