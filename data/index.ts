@@ -191,14 +191,14 @@ export const navItems = [
     // },
     {
       id: 3,
-      title: "Freelance Web Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on Vercel.",
+      title: "Freelance Web Dev Projects",
+      desc: "Led the dev of many web applications for several clients, from initial concept to deployment.",
       className: "md:col-span-2",
       thumbnail: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357360/Portfolio/exp3_c8qq9j.svg",
     },
     {
       id: 4,
-      title: "Lead Web Developer",
+      title: "Web Developer intern at JNU + SAAARP LABS",
       desc: "Developed and maintained user-facing features using modern frontend and backend technologies.",
       className: "md:col-span-2",
       thumbnail: "https://res.cloudinary.com/dk2qptwnw/image/upload/v1717357360/Portfolio/exp4_hvymti.svg",
